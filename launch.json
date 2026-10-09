@@ -1,0 +1,24 @@
+{
+  "kind": "custom_token",
+  "token": {
+    "contract": "SBEEToken",
+    "name": "Swarm Bee",
+    "symbol": "SBEE",
+    "decimals": 18,
+    "constructorArgs": [],
+    "totalSupply": "1000000000000000000000000000"
+  },
+  "contracts": [],
+  "pool": {
+    "pairedCurrency": "0x5f7bb59365ce557c26dbcaa4ee9d39a4b95b7127",
+    "fee": 12500,
+    "tickSpacing": 60,
+    "initialPrice": "125270724187523965593206900"
+  },
+  "economics": {
+    "poolBps": 9000,
+    "initialMarketCapWei": "2500000000000000000000",
+    "remainderTo": "0x000000000000000000000000000000000000dead"
+  },
+  "notes": "Swarm Bee (SBEE): fixed 1,000,000,000 supply minted once to the deployer (the launch factory), no owner and no admin functions. A 2% creator tax applies only to transfers sent by the Uniswap v4 PoolManager 0x8366a39cc670b4001a1121b8f6a443a643e40951 (buys) and goes to the fixed wallet 0xF74C1a2e29169A06d2f785bC440ee3725A5DD965; transfers to the PoolManager (sells, the pool seed) and wallet-to-wallet transfers are untaxed. The factory handles the swarm's 10% and seeds the pool with 90% at the chain's 1.25% launch fee; initialPrice is provenance only."
+}
